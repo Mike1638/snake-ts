@@ -1,0 +1,55 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#main {
+    width: 360px;
+    height: 420px;
+    background-color: aquamarine;
+    margin: 150px auto;
+    border: 1px solid black;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#stage {
+    width: 304px;
+    height: 304px;
+    border: 2px solid black;
+    margin: 20px auto;
+    position: relative;
+
+    #snake {
+        div {
+            position: absolute;
+            width: 10px;
+            height: 10px;
+            background-color: black;
+            border: 1px solid aquamarine;
+        }
+    }
+
+    #food {
+        position: absolute;
+        left: 40px;
+        top: 40px;
+        width: 10px;
+        height: 10px;
+        background-color: black;
+        border: 1px solid aquamarine;
+        border-radius: 5px;
+    }
+}
+
+#screen {
+    width: 304px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
